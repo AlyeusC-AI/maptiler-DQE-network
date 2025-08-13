@@ -1,0 +1,44 @@
+{
+  "name": "amc-maptiler-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2",
+    "@maptiler/geocoding-control": "0.0.97",
+    "@maptiler/sdk": "^1.2.1",
+    "@turf/bbox": "^6.5.0",
+    "@turf/helpers": "^6.5.0",
+    "@turf/nearest-point-on-line": "^6.5.0",
+    "@types/googlemaps": "^3.43.3",
+    "mapbox-gl": "^2.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.5",
+    "browser-sync": "^2.26.13",
+    "css-loader": "^6.7.1",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "log-symbols": "^4.1.0",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "watch": "npx webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.greystonespl.com:access-marketing-company/maptiler-integration.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>MapTiler Integration Example</title>
+  <meta name="viewport" content="initial-scale=1,width=device-width" />
+  <script src="https://cdn.maptiler.com/mapbox-gl-js/v1.13.2/mapbox-gl.js"></script>
+  <link href="https://cdn.maptiler.com/mapbox-gl-js/v1.13.2/mapbox-gl.css" rel="stylesheet" />
+  <!-- <link href="dist/main.css" rel="stylesheet" /> -->
+  <script type="module">
+    import { GeocodingControl } from "https://cdn.maptiler.com/maptiler-geocoding-control/v0.0.97/vanilla.js";
+    window.maptilerGeocoder = {
+      GeocodingControl
+    };
+  </script>
+  <link
+    href="https://cdn.maptiler.com/maptiler-geocoding-control/v0.0.97/style.css"
+    rel="stylesheet"
+  />
+  <style>
+    #map { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+    #map .maplibregl-canvas-container .maplibregl-marker {
+      /* background-image: url('https://maptiler-integration.gtstaging.com/dist/img/Iris_Map_Pin_FinServ.svg'); */
+    }
+  </style>
+</head>
+<body>
+  <div id="map">
+  </div>
+  <!-- Our JS file -->
+  <script src="dist/main.js"></script>
+  <script>
+    function readTextFile(file, callback) {
+      fetch(file)
+        .then(response => response.json())
+        .then(data => callback(data));
+    }
+
+    readTextFile("config.json", function(config){
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const key = urlParams.get('key');
+      if(key) {
+        config.key = key;
+      }
+      const googleKey = urlParams.get('googleKey');
+      if(googleKey) {
+        config.googleKey = googleKey;
+      }
+      const styleUrl = urlParams.get('styleUrl');
+      if(styleUrl) {
+        config.styleUrl = styleUrl;
+      }
+      const controlZoom = urlParams.get('controlZoom');
+      if(controlZoom) {
+        config.controlZoom = controlZoom;
+      }
+      const showResults = urlParams.get('showResults');
+      if(showResults) {
+        config.showResults = showResults;
+      }
+      const featuredTitle = urlParams.get('featuredTitle');
+      if(featuredTitle) {
+        config.featuredTitle = featuredTitle;
+      }
+      const featuredHeaderColor = urlParams.get('featuredHeaderColor');
+      if(featuredHeaderColor) {
+        config.featuredHeaderColor = featuredHeaderColor;
+      }
+      const resultsTitle = urlParams.get('resultsTitle');
+      if(resultsTitle) {
+        config.resultsTitle = resultsTitle;
+      }
+      const layersTitle = urlParams.get('layersTitle');
+      if(layersTitle) {
+        config.layersTitle = layersTitle;
+      }
+      const minZoom = urlParams.get('minZoom');
+      if(minZoom) {
+        config.minZoom = minZoom;
+      }
+      const maxBounds = urlParams.get('maxBounds');
+      if (maxBounds) {
+        let boundsArray = maxBounds.split('|');
+        boundsArray = boundsArray.map(coordinates => {
+          return coordinates.split(',');
+        });
+
+        config.maxBounds = boundsArray;
+      }
+      const showLayers = urlParams.get('showLayers');
+      if(showLayers) {
+        config.showLayers = showLayers === 'true';
+      }
+      const showProximitySearch = urlParams.get('showProximitySearch');
+      if(showProximitySearch) {
+        config.showProximitySearch = showProximitySearch === 'true';
+      }
+      const showNavigationControls = urlParams.get('showNavigationControls');
+      if(showNavigationControls) {
+        config.showNavigationControls = showNavigationControls === 'true';
+      }
+      const markerImage = urlParams.get('markerImage');
+      if(markerImage) {
+        const markerImageStyle = document.createElement('style');
+        markerImageStyle.textContent = `
+        #map .maplibregl-canvas-container .maplibregl-marker {
+          background-image: url('${markerImage}');
+        }
+        `;
+        document.head.appendChild(markerImageStyle);
+      }
+      const popupBgColor = urlParams.get('popupBgColor');
+      if(popupBgColor) {
+        const popupBgColorStyle = document.createElement('style');
+        popupBgColorStyle.textContent = `
+        #map .maplibregl-popup .maplibregl-popup-tip {
+          border-top-color: #${popupBgColor};
+        }
+        #map .maplibregl-popup .maplibregl-popup-content {
+          background-color: #${popupBgColor};
+        }
+        `;
+        document.head.appendChild(popupBgColorStyle);
+      }
+      const popupTextColor = urlParams.get('popupTextColor');
+      if(popupTextColor) {
+        const popupTextColorStyle = document.createElement('style');
+        popupTextColorStyle.textContent = `
+        #map .maplibregl-popup .maplibregl-popup-content,
+        #map .maplibregl-popup .maplibregl-popup-content button {
+          color: #${popupTextColor};
+        }
+        `;
+        document.head.appendChild(popupTextColorStyle);
+      }
+      new mapTilerIntegration.Map(config);
+    });
+
+  </script>
+</body>
+</html>
