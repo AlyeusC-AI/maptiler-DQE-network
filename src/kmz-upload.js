@@ -111,14 +111,22 @@ class KMZUploadControl {
       const override = this._container.querySelector('#kmz-override-toggle')?.checked;
       const beforeId = targetId || undefined;
 
+      // Prepare per-feature icons for points, if present
+      let iconMap = new Map();
+      if (hasPoints) {
+        iconMap = this.collectIconUrls(geojson);
+        await this.ensureImages(iconMap);
+      }
+
       if (hasPolygons) {
         this.addLayerSafe({
           id: `${layerId}-fill`,
           type: 'fill',
           source: sourceId,
           paint: {
-            'fill-color': '#ff0000',
-            'fill-opacity': 0.3
+            'fill-color': ['coalesce', ['get', 'fill'], ['get', 'stroke'], '#ff0000'],
+            'fill-opacity': ['coalesce', ['to-number', ['get', 'fill-opacity']], 0.3],
+            'fill-outline-color': ['coalesce', ['get', 'stroke'], '#000000']
           },
           filter: ['any', ['==', ['geometry-type'], 'Polygon'], ['==', ['geometry-type'], 'MultiPolygon']]
         }, beforeId);
@@ -130,25 +138,45 @@ class KMZUploadControl {
           type: 'line',
           source: sourceId,
           paint: {
-            'line-color': '#ff0000',
-            'line-width': 2
+            'line-color': ['coalesce', ['get', 'stroke'], ['get', 'fill'], '#ff0000'],
+            'line-width': ['coalesce', ['to-number', ['get', 'stroke-width']], 2],
+            'line-opacity': ['coalesce', ['to-number', ['get', 'stroke-opacity']], 1]
           },
           filter: ['any', ['==', ['geometry-type'], 'LineString'], ['==', ['geometry-type'], 'MultiLineString']]
         }, beforeId);
       }
 
       if (hasPoints) {
+        // Symbol layer for icon-based points
+        this.addLayerSafe({
+          id: `${layerId}-symbol`,
+          type: 'symbol',
+          source: sourceId,
+          layout: {
+            'icon-image': ['get', 'icon-id'],
+            'icon-size': ['coalesce', ['to-number', ['get', 'icon-scale']], 1],
+            'icon-allow-overlap': true,
+            'text-field': ['coalesce', ['get', 'name'], ''],
+            'text-offset': [0, 1.2],
+            'text-size': 12,
+            'text-anchor': 'top'
+          },
+          filter: ['all', ['any', ['==', ['geometry-type'], 'Point'], ['==', ['geometry-type'], 'MultiPoint']], ['has', 'icon-id']]
+        }, beforeId);
+
+        // Circle layer fallback for points without icons
         this.addLayerSafe({
           id: `${layerId}-circle`,
           type: 'circle',
           source: sourceId,
           paint: {
-            'circle-color': '#ff0000',
+            'circle-color': ['coalesce', ['get', 'marker-color'], ['get', 'fill'], ['get', 'stroke'], '#ff0000'],
             'circle-radius': 5,
-            'circle-stroke-color': '#ffffff',
-            'circle-stroke-width': 1
+            'circle-stroke-color': ['coalesce', ['get', 'stroke'], '#ffffff'],
+            'circle-stroke-width': ['coalesce', ['to-number', ['get', 'stroke-width']], 1],
+            'circle-opacity': ['coalesce', ['to-number', ['get', 'fill-opacity']], 1]
           },
-          filter: ['any', ['==', ['geometry-type'], 'Point'], ['==', ['geometry-type'], 'MultiPoint']]
+          filter: ['all', ['any', ['==', ['geometry-type'], 'Point'], ['==', ['geometry-type'], 'MultiPoint']], ['!', ['has', 'icon-id']]]
         }, beforeId);
       }
 
@@ -206,6 +234,7 @@ class KMZUploadControl {
       throw new Error('Invalid KML (XML parse error)');
     }
     const gj = toGeoJSON.kml(kmlDoc);
+    this.applyKmlStyleToFeatures(gj, zip);
     if (!gj || gj.type !== 'FeatureCollection') {
       throw new Error('Parsed KML did not produce a FeatureCollection');
     }
@@ -220,10 +249,76 @@ class KMZUploadControl {
       throw new Error('Invalid KML (XML parse error)');
     }
     const gj = toGeoJSON.kml(kmlDoc);
+    // No zip here, but inline styles should still be on properties
     if (!gj || gj.type !== 'FeatureCollection') {
       throw new Error('Parsed KML did not produce a FeatureCollection');
     }
     return gj;
+  }
+
+  // Parses KML styles and styleMaps, assigning resolved color/width/icon properties
+  applyKmlStyleToFeatures(geojson, zip) {
+    if (!geojson || !geojson.features) return;
+    // togeojson already resolves many styles to properties: stroke, stroke-width, stroke-opacity, fill, fill-opacity
+    // For KML icons, map hrefs to an icon-id so we can register images and reference them in a symbol layer.
+    geojson.features.forEach((f) => {
+      const props = f.properties || {};
+      // Icon style
+      const href = props['icon'] || props['iconHref'] || props['icon-url'] || props['iconUrl'];
+      if (href) {
+        // normalize as icon-id; actual image loading is done later
+        props['icon-id'] = href;
+      }
+      // KML color parsing (aabbggrr) to #rrggbb + opacity
+      const kmlColor = props['kml-color'] || props['kmlColor'] || null;
+      if (kmlColor && typeof kmlColor === 'string' && kmlColor.length === 8) {
+        const a = parseInt(kmlColor.substring(0, 2), 16) / 255;
+        const b = kmlColor.substring(2, 4);
+        const g = kmlColor.substring(4, 6);
+        const r = kmlColor.substring(6, 8);
+        const hex = `#${r}${g}${b}`;
+        if (!props.fill) props.fill = hex;
+        if (props['fill-opacity'] == null) props['fill-opacity'] = a;
+        if (!props.stroke) props.stroke = hex;
+        if (props['stroke-opacity'] == null) props['stroke-opacity'] = a;
+      }
+      f.properties = props;
+    });
+  }
+
+  collectIconUrls(geojson) {
+    const set = new Map();
+    if (!geojson || !geojson.features) return set;
+    geojson.features.forEach((f) => {
+      const props = f.properties || {};
+      const href = props['icon-id'];
+      if (href && !set.has(href)) set.set(href, href);
+    });
+    return set;
+  }
+
+  async ensureImages(iconMap) {
+    const loadOne = (url) => new Promise((resolve) => {
+      // Avoid errors from duplicate addImage
+      try {
+        if (this._map.hasImage && this._map.hasImage(url)) return resolve();
+      } catch (_) {}
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = () => {
+        try {
+          if (!this._map.hasImage || !this._map.hasImage(url)) {
+            this._map.addImage(url, img, { pixelRatio: 2 });
+          }
+        } catch (_) {}
+        resolve();
+      };
+      img.onerror = () => resolve();
+      img.src = url;
+    });
+    const promises = [];
+    iconMap.forEach((_, url) => promises.push(loadOne(url)));
+    await Promise.all(promises);
   }
 
   appendListItem(layerId, name) {
