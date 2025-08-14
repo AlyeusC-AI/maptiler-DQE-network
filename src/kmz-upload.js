@@ -337,6 +337,7 @@ class KMZUploadControl {
     const removeBtn = document.createElement('button');
     removeBtn.type = 'button';
     removeBtn.innerText = 'Remove';
+    removeBtn.style.marginTop = '8px';
     removeBtn.addEventListener('click', () => this.removeLayer(layerId));
 
     li.appendChild(input);
@@ -349,7 +350,8 @@ class KMZUploadControl {
     const ids = [
       `${layerId}-fill`,
       `${layerId}-line`,
-      `${layerId}-circle`
+      `${layerId}-circle`,
+      `${layerId}-symbol`
     ];
     ids.forEach((id) => {
       if (this._map.getLayer(id)) {
@@ -360,7 +362,7 @@ class KMZUploadControl {
 
   removeLayer(layerId) {
     // Remove layers
-    ['fill', 'line', 'circle'].forEach((suffix) => {
+    ['fill', 'line', 'circle', 'symbol'].forEach((suffix) => {
       const id = `${layerId}-${suffix}`;
       if (this._map.getLayer(id)) {
         this._map.removeLayer(id);
