@@ -8,6 +8,7 @@ import { FeaturedPanelControl } from './featured-panel.js';
 import { InstructionsPanelControl } from './instructions-panel.js';
 import "@maptiler/sdk/dist/maptiler-sdk.css";
 import { Map as MapTilerMap, setRTLTextPlugin, Popup } from '@maptiler/sdk';
+import { KMZUploadControl } from './kmz-upload.js';
 
 class Map {
   constructor(config) {
@@ -131,6 +132,9 @@ class Map {
       if (this.config.showResults) {
         map.addControl(new ResultsPanelControl(this.config.resultsTitle), 'top-left');
       }
+
+      // Feature 1: KMZ upload control
+      map.addControl(new KMZUploadControl(), 'top-right');
 
       this.setMapBounds(map, features);
     });
