@@ -10,6 +10,7 @@ import "@maptiler/sdk/dist/maptiler-sdk.css";
 import { Map as MapTilerMap, setRTLTextPlugin, Popup } from '@maptiler/sdk';
 import { KMZUploadControl } from './kmz-upload.js';
 import { AddressUploadControl } from './address-upload.js';
+import { MultiAddressSearchControl } from './multi-address-search.js';
 
 class Map {
   constructor(config) {
@@ -139,6 +140,9 @@ class Map {
       
       // Feature 2: Address upload control
       map.addControl(new AddressUploadControl(map, this.config), 'top-left');
+      
+      // Feature 3: Multi-address search control
+      map.addControl(new MultiAddressSearchControl(map, this.config), 'top-left');
 
       this.setMapBounds(map, features);
     });
