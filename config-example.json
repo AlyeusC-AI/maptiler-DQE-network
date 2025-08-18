@@ -1,6 +1,32 @@
 {
-    "target": "map",
-    "key": "",
-    "styleUrl": "",
-    "markerImage": ""
+  "target": "map",
+  "key": "YOUR_MAPTILER_API_KEY",
+  "styleUrl": "https://api.maptiler.com/maps/streets/style.json",
+  "showNavigationControls": true,
+  "controlZoom": false,
+  "minZoom": 3,
+  "maxBounds": [
+    [-180, -85],
+    [180, 85]
+  ],
+  "showLayers": true,
+  "layersTitle": "Layers",
+  "showProximitySearch": true,
+  "markerImage": "/dist/img/marker.svg",
+  "showResults": true,
+  "resultsTitle": "Results",
+  "featuredTitle": "Featured",
+  "featuredHeaderColor": "#333",
+  "plugins": {
+    "enabled": true,
+    "defaultFeatures": {
+      "kmz-upload": true,
+      "address-upload": true,
+      "multi-address-search": true,
+      "address-recording": false,
+      "building-styles": false
+    },
+    "allowUserOverride": true,
+    "saveToLocalStorage": true
+  }
 }

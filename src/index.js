@@ -11,6 +11,7 @@ import { Map as MapTilerMap, setRTLTextPlugin, Popup } from '@maptiler/sdk';
 import { KMZUploadControl } from './kmz-upload.js';
 import { AddressUploadControl } from './address-upload.js';
 import { MultiAddressSearchControl } from './multi-address-search.js';
+import { PluginSettingsControl } from './plugin-settings.js';
 
 class Map {
   constructor(config) {
@@ -135,14 +136,47 @@ class Map {
         map.addControl(new ResultsPanelControl(this.config.resultsTitle), 'top-left');
       }
 
-      // Feature 1: KMZ upload control
-      map.addControl(new KMZUploadControl(), 'top-right');
+      // Plugin Settings Control (always visible)
+      const pluginSettings = new PluginSettingsControl(this.config);
+      map.addControl(pluginSettings, 'top-right');
       
-      // Feature 2: Address upload control
-      map.addControl(new AddressUploadControl(map, this.config), 'top-left');
+      // Feature 1: KMZ upload control (conditional)
+      const kmzControl = new KMZUploadControl();
+      map.addControl(kmzControl, 'top-right');
       
-      // Feature 3: Multi-address search control
-      map.addControl(new MultiAddressSearchControl(map, this.config), 'top-left');
+      // Feature 2: Address upload control (conditional)
+      const addressControl = new AddressUploadControl(map, this.config);
+      map.addControl(addressControl, 'top-left');
+      
+      // Feature 3: Multi-address search control (conditional)
+      const multiAddressControl = new MultiAddressSearchControl(map, this.config);
+      map.addControl(multiAddressControl, 'top-left');
+      
+      // Set up feature toggling based on settings
+      pluginSettings.addObserver((feature, enabled) => {
+        switch (feature) {
+          case 'kmz-upload':
+            kmzControl._container.style.display = enabled ? 'block' : 'none';
+            break;
+          case 'address-upload':
+            addressControl._container.style.display = enabled ? 'block' : 'none';
+            break;
+          case 'multi-address-search':
+            multiAddressControl._container.style.display = enabled ? 'block' : 'none';
+            break;
+        }
+      });
+      
+      // Apply initial settings
+      if (!pluginSettings.isFeatureEnabled('kmz-upload')) {
+        kmzControl._container.style.display = 'none';
+      }
+      if (!pluginSettings.isFeatureEnabled('address-upload')) {
+        addressControl._container.style.display = 'none';
+      }
+      if (!pluginSettings.isFeatureEnabled('multi-address-search')) {
+        multiAddressControl._container.style.display = 'none';
+      }
 
       this.setMapBounds(map, features);
     });
