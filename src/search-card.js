@@ -181,6 +181,7 @@ class SearchCardControl {
     bottomBar.className = 'search-card__bottom-row';
     const leftText = document.createElement('div');
     leftText.textContent = 'Or Upload a CSV';
+    leftText.style.color = '#232d4b';
     const uploadWrap = document.createElement('label');
     uploadWrap.className = 'search-card__file-btn';
     uploadWrap.textContent = 'Choose File...';
