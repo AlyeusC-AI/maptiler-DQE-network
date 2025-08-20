@@ -10,6 +10,7 @@
     "@turf/bbox": "^6.5.0",
     "@turf/helpers": "^6.5.0",
     "@turf/nearest-point-on-line": "^6.5.0",
+    "@turf/boolean-point-in-polygon": "^6.5.0",
     "@types/googlemaps": "^3.43.3",
     "file-saver": "^2.0.5",
     "jszip": "^3.10.1",

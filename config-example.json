@@ -20,11 +20,12 @@
   "plugins": {
     "enabled": true,
     "defaultFeatures": {
-      "kmz-upload": true,
-      "address-upload": true,
-      "multi-address-search": true,
+      "kmz-upload": false,
+      "address-upload": false,
+      "multi-address-search": false,
       "address-recording": false,
-      "building-styles": false
+      "building-styles": false,
+      "search-card": true
     },
     "allowUserOverride": true,
     "saveToLocalStorage": true

@@ -1,0 +1,3608 @@
+{
+    "type": "FeatureCollection",
+    "name": "business-parks",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": null,
+                "tessellate": -1,
+                "extrude": 0,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Cranberry Square",
+                "Street_Address": "Cranberry Square",
+                "City": "Morgantown",
+                "State": "WV",
+                "Zip": "26508",
+                "County": "Monongalia",
+                "Google_Lat": "39.7394593",
+                "Google_Long": "-80.0746049"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.85365761336311,
+                    39.67133373965503,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "62nd Street Industrial Park",
+                "Street_Address": "62nd Street",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15201",
+                "County": "Allegheny",
+                "Google_Lat": "40.488629",
+                "Google_Long": "-79.939159"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.939159,
+                    40.488629,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "84 Commerce Park",
+                "Street_Address": "Pennsylvania 519",
+                "City": "Eighty Four",
+                "State": "PA",
+                "Zip": "15330",
+                "County": "Washington",
+                "Google_Lat": "40.1898812544945",
+                "Google_Long": "-80.1361495256424"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.13615,
+                    40.189881,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Abele Business Park",
+                "Street_Address": "Abele Road",
+                "City": "Bridgeville",
+                "State": "PA",
+                "Zip": "15017",
+                "County": "Allegheny",
+                "Google_Lat": "40.350905",
+                "Google_Long": "-80.12367"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.12367,
+                    40.350905,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Airport Office Park",
+                "Street_Address": "200 Marshall Drive",
+                "City": "Coraopolis",
+                "State": "PA",
+                "Zip": "15108",
+                "County": "Allegheny",
+                "Google_Lat": "40.502279",
+                "Google_Long": "-80.213132"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.213132,
+                    40.502279,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Airside Business Park",
+                "Street_Address": "Airside Drive",
+                "City": "Moon",
+                "State": "PA",
+                "Zip": "15108",
+                "County": "Allegheny",
+                "Google_Lat": "40.498558",
+                "Google_Long": "-80.219348"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.219348,
+                    40.498558,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Aliquippa Industrial Park",
+                "Street_Address": "400 Steel Street",
+                "City": "Aliquippa",
+                "State": "PA",
+                "Zip": "15001",
+                "County": "Beaver",
+                "Google_Lat": "40.613513",
+                "Google_Long": "-80.237762"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.237762,
+                    40.613513,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Allegheny Industrial District",
+                "Street_Address": "Nixon Road",
+                "City": "Cheswick",
+                "State": "PA",
+                "Zip": "15024",
+                "County": "Allegheny",
+                "Google_Lat": "40.557927",
+                "Google_Long": "-79.8237163"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.823716,
+                    40.557927,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Ambridge Regional Distribution & Manufacturing Center",
+                "Street_Address": "2301 Duss Ave",
+                "City": "Ambridge",
+                "State": "PA",
+                "Zip": "15003",
+                "County": "Beaver",
+                "Google_Lat": "40.618314",
+                "Google_Long": "-80.23084"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.23084,
+                    40.618314,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Apollo Borough Riverfront Site",
+                "Street_Address": "N Warren Ave",
+                "City": "Apollo",
+                "State": "PA",
+                "Zip": "15613",
+                "County": "Armstrong",
+                "Google_Lat": "40.5868749816733",
+                "Google_Long": "-79.5675373077393"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.567537,
+                    40.586875,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Banco Business Park",
+                "Street_Address": "1061 Main Street,\nBanco Park Drive",
+                "City": "North Huntingdon",
+                "State": "PA",
+                "Zip": "15642",
+                "County": "Westmoreland",
+                "Google_Lat": "40.31124",
+                "Google_Long": "-79.723966"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.723966,
+                    40.31124,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Beaver Valley Industrial Park",
+                "Street_Address": "1 Industrial Park Road",
+                "City": "Monaca",
+                "State": "PA",
+                "Zip": "15061",
+                "County": "Beaver",
+                "Google_Lat": "40.679508",
+                "Google_Long": "-80.260377"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.260377,
+                    40.679508,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Bethel Park Industrial Park",
+                "Street_Address": "2886 Industrial Blvd",
+                "City": "Bethel Park",
+                "State": "PA",
+                "Zip": "15102",
+                "County": "Allegheny",
+                "Google_Lat": "40.32755",
+                "Google_Long": "-80.039286"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.039286,
+                    40.32755,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Brooktree Center",
+                "Street_Address": "7500 Brooktree Court",
+                "City": "Wexford",
+                "State": "PA",
+                "Zip": "15090",
+                "County": "Allegheny",
+                "Google_Lat": "40.6137494",
+                "Google_Long": "-80.0613151"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.061315,
+                    40.613749,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Bruce Commerce Park",
+                "Street_Address": "930 Cass Street",
+                "City": "New Castle",
+                "State": "PA",
+                "Zip": "16101",
+                "County": "Lawrence",
+                "Google_Lat": "40.979939",
+                "Google_Long": "-80.3161309999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.316131,
+                    40.979939,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Buncher Leetsdale Commerce Park",
+                "Street_Address": "9 Avenue A",
+                "City": "Leetsdale",
+                "State": "PA",
+                "Zip": "15056",
+                "County": "Allegheny",
+                "Google_Lat": "40.5625958",
+                "Google_Long": "-80.208253"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.208253,
+                    40.562596,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "California Technology Park",
+                "Street_Address": "Technology Drive",
+                "City": "Coal Center",
+                "State": "PA",
+                "Zip": "15423",
+                "County": "Washington",
+                "Google_Lat": "40.0575573",
+                "Google_Long": "-79.9161199"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.91612,
+                    40.057557,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Carnegie Office Park",
+                "Street_Address": "600 N Bell Ave",
+                "City": "Carnegie",
+                "State": "PA",
+                "Zip": "15106",
+                "County": "Allegheny",
+                "Google_Lat": "40.4168157999999",
+                "Google_Long": "-80.0896146999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.089615,
+                    40.416816,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Cedar Ridge Business Park",
+                "Street_Address": "300 Cedar Ridge Drive",
+                "City": "Robinson Twp",
+                "State": "PA",
+                "Zip": "15205",
+                "County": "Allegheny",
+                "Google_Lat": "40.4476145",
+                "Google_Long": "-80.1071978"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.107198,
+                    40.447615,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Chartiers Valley Industrial Park",
+                "Street_Address": "Mazette Road",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15205",
+                "County": "Allegheny",
+                "Google_Lat": "40.4482370728679",
+                "Google_Long": "-80.0859224796295"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.085922,
+                    40.448237,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Cherrington Commerce Park",
+                "Street_Address": "Ewing Road",
+                "City": "Moon",
+                "State": "PA",
+                "Zip": "15108",
+                "County": "Allegheny",
+                "Google_Lat": "40.4849512410622",
+                "Google_Long": "-80.1970410346984"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.197041,
+                    40.484951,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Cherrington Corporate Center",
+                "Street_Address": "Corporate Center Drive",
+                "City": "Coraopolis",
+                "State": "PA",
+                "Zip": "15108",
+                "County": "Allegheny",
+                "Google_Lat": "40.4977205",
+                "Google_Long": "-80.203553"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.203553,
+                    40.497721,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "City of Hermitage Industrial Corridor",
+                "Street_Address": "",
+                "City": "",
+                "State": "",
+                "Zip": "0",
+                "County": "",
+                "Google_Lat": "41.1942472",
+                "Google_Long": "-80.4724305"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.472431,
+                    41.194247,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Clinton Commerce Park",
+                "Street_Address": "2291 Sweeney Drive",
+                "City": "Clinton",
+                "State": "PA",
+                "Zip": "15026",
+                "County": "Allegheny",
+                "Google_Lat": "40.497587",
+                "Google_Long": "-80.2931219999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.293122,
+                    40.497587,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Cochrandale Redevelopment",
+                "Street_Address": "435 Cedar Street",
+                "City": "Duquesne",
+                "State": "PA",
+                "Zip": "15110",
+                "County": "Allegheny",
+                "Google_Lat": "40.367849",
+                "Google_Long": "-79.8429588999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.842959,
+                    40.367849,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Connellsville Industrial Park",
+                "Street_Address": "Industrial Drive",
+                "City": "Connellsville",
+                "State": "PA",
+                "Zip": "15425",
+                "County": "Fayette",
+                "Google_Lat": "40.0441938",
+                "Google_Long": "-79.5763066"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.576307,
+                    40.044194,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Cranberry Business Park",
+                "Street_Address": "3120 Unionville Road",
+                "City": "Cranberry Twp",
+                "State": "PA",
+                "Zip": "16066",
+                "County": "Allegheny",
+                "Google_Lat": "40.7100696",
+                "Google_Long": "-80.1135378999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.113538,
+                    40.71007,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Cranberry Corporate Center",
+                "Street_Address": "Executive Drive",
+                "City": "Cranberry Twp",
+                "State": "PA",
+                "Zip": "16066",
+                "County": "Allegheny",
+                "Google_Lat": "40.6885503",
+                "Google_Long": "-80.1085006999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.108501,
+                    40.68855,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Cranberry Industrial Park",
+                "Street_Address": "Progress Ave",
+                "City": "Cranberry Twp",
+                "State": "PA",
+                "Zip": "16066",
+                "County": "Allegheny",
+                "Google_Lat": "40.7083967",
+                "Google_Long": "-80.1079888"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.107989,
+                    40.708397,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Cranberry Woods Office Park",
+                "Street_Address": "600 Cranberry Woods Drive",
+                "City": "Cranberry Twp",
+                "State": "PA",
+                "Zip": "16066",
+                "County": "Allegheny",
+                "Google_Lat": "40.6777333",
+                "Google_Long": "-80.0940335"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.094034,
+                    40.677733,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Dunbar Township Business Park",
+                "Street_Address": "Route 119 and Pechin Road",
+                "City": "Dunbar",
+                "State": "PA",
+                "Zip": "15431",
+                "County": "Fayette",
+                "Google_Lat": "39.9680062",
+                "Google_Long": "-79.6457375999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.645738,
+                    39.968006,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "EverGreene Technology Park",
+                "Street_Address": "300 Evergreene Drive",
+                "City": "Waynesburg",
+                "State": "PA",
+                "Zip": "15370",
+                "County": "Greene",
+                "Google_Lat": "39.9032728",
+                "Google_Long": "-80.1276338999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.127634,
+                    39.903273,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Fayette County Business Park",
+                "Street_Address": "Wayland Smith Drive",
+                "City": "Uniontown",
+                "State": "PA",
+                "Zip": "15401",
+                "County": "Fayette",
+                "Google_Lat": "39.9125336",
+                "Google_Long": "-79.7533460999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.753346,
+                    39.912534,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Foster Plaza",
+                "Street_Address": "Holiday Drive",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15220",
+                "County": "Allegheny",
+                "Google_Lat": "40.4224101",
+                "Google_Long": "-80.0583581999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.058358,
+                    40.42241,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Foxpointe Centre",
+                "Street_Address": "201 S Johnson Road",
+                "City": "Houston",
+                "State": "PA",
+                "Zip": "15342",
+                "County": "Washington",
+                "Google_Lat": "40.2374639",
+                "Google_Long": "-80.2057543999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.205754,
+                    40.237464,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "George Westinghouse Research & Technology Park",
+                "Street_Address": "1310 Beulah Road",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15235",
+                "County": "Allegheny",
+                "Google_Lat": "40.4405556",
+                "Google_Long": "-79.85"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.85,
+                    40.440556,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Greene County Airport Business Park",
+                "Street_Address": "417 East Roy Furman Highway",
+                "City": "Waynesburg",
+                "State": "PA",
+                "Zip": "15370",
+                "County": "Greene",
+                "Google_Lat": "39.8991082",
+                "Google_Long": "-80.1321889999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.132189,
+                    39.899108,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Greensburg-Hempfield Business Park",
+                "Street_Address": "1132 Woodward Drive Ext",
+                "City": "Greensburg",
+                "State": "PA",
+                "Zip": "15601",
+                "County": "Westmoreland",
+                "Google_Lat": "40.2854022596748",
+                "Google_Long": "-79.5695006847381"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.569501,
+                    40.285402,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Greentree Office Park",
+                "Street_Address": "Parish Street",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15220",
+                "County": "Allegheny",
+                "Google_Lat": "40.4278715692361",
+                "Google_Long": "-80.0429588556289"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.042959,
+                    40.427872,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Hauser Industrial Park",
+                "Street_Address": "4457 U.S. 30",
+                "City": "Latrobe",
+                "State": "PA",
+                "Zip": "15650",
+                "County": "Westmoreland",
+                "Google_Lat": "40.2850053194162",
+                "Google_Long": "-79.4368144869804"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.436814,
+                    40.285005,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Hightower Office Park",
+                "Street_Address": "Hightower Blvd",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15205",
+                "County": "Allegheny",
+                "Google_Lat": "40.4507257",
+                "Google_Long": "-80.1535392"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.153539,
+                    40.450726,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Hopewell Business & Industrial Park",
+                "Street_Address": "Industrial Blvd",
+                "City": "Aliquippa",
+                "State": "PA",
+                "Zip": "15001",
+                "County": "Beaver",
+                "Google_Lat": "40.5614656389178",
+                "Google_Long": "-80.2717834711074"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.271783,
+                    40.561466,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Imperial Business Park",
+                "Street_Address": "International Drive",
+                "City": "Oakdale",
+                "State": "PA",
+                "Zip": "15071",
+                "County": "Allegheny",
+                "Google_Lat": "40.4349520168057",
+                "Google_Long": "-80.2298015356063"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.229802,
+                    40.434952,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Imperial Industrial Park",
+                "Street_Address": "1100 Logan Road",
+                "City": "Oakdale",
+                "State": "PA",
+                "Zip": "15071",
+                "County": "Allegheny",
+                "Google_Lat": "40.4370833550295",
+                "Google_Long": "-80.2316308021545"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.231631,
+                    40.437083,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Indiana County Corporate Campus",
+                "Street_Address": "Cornell Road",
+                "City": "Blairsville",
+                "State": "PA",
+                "Zip": "15717",
+                "County": "Indiana",
+                "Google_Lat": "40.4464408450982",
+                "Google_Long": "-79.2268431186676"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.226843,
+                    40.446441,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Industry Drive Business Park",
+                "Street_Address": "200 Industry Drive",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15275",
+                "County": "Allegheny",
+                "Google_Lat": "40.466262009183",
+                "Google_Long": "-80.2033817768096"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.203382,
+                    40.466262,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Interstate Industrial Park",
+                "Street_Address": "Cool Springs Drive",
+                "City": "Cranberry Twp",
+                "State": "PA",
+                "Zip": "16066",
+                "County": "Butler",
+                "Google_Lat": "40.6882694028112",
+                "Google_Long": "-80.0933897495269"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.09339,
+                    40.688269,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Jackson Point Commerce Center",
+                "Street_Address": "U.S. 19",
+                "City": "Zelienople",
+                "State": "PA",
+                "Zip": "16063",
+                "County": "Butler",
+                "Google_Lat": "40.756597",
+                "Google_Long": "-80.120372"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.120372,
+                    40.756597,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Jackson Township Business Park",
+                "Street_Address": "6 Whitney Drive",
+                "City": "Harmony",
+                "State": "PA",
+                "Zip": "16063",
+                "County": "Butler",
+                "Google_Lat": "40.7992272",
+                "Google_Long": "-80.1207319"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.120732,
+                    40.799227,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Jeannette Industrial Park",
+                "Street_Address": "9th and Clay Ave",
+                "City": "Jeannette",
+                "State": "PA",
+                "Zip": "15644",
+                "County": "Westmoreland",
+                "Google_Lat": "40.3301392580432",
+                "Google_Long": "-79.6230804920196"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.62308,
+                    40.330139,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Keystone Summit Park",
+                "Street_Address": "6000 Ericsson Drive",
+                "City": "Baden",
+                "State": "PA",
+                "Zip": "15005",
+                "County": "Allegheny",
+                "Google_Lat": "40.6587316074665",
+                "Google_Long": "-80.1019513607025"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.101951,
+                    40.658732,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Kisow Business Park",
+                "Street_Address": "230 Bilmar Drive",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15205",
+                "County": "Allegheny",
+                "Google_Lat": "40.4484330220841",
+                "Google_Long": "-80.0971662998199"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.097166,
+                    40.448433,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Kriess Road Business Park",
+                "Street_Address": "Kriess Road",
+                "City": "Renfrew",
+                "State": "PA",
+                "Zip": "16053",
+                "County": "Butler",
+                "Google_Lat": "40.848494",
+                "Google_Long": "-79.980766"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.980766,
+                    40.848494,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Latrobe Industrial Park",
+                "Street_Address": "Dill Lane",
+                "City": "Latrobe",
+                "State": "PA",
+                "Zip": "15650",
+                "County": "Westmoreland",
+                "Google_Lat": "40.3039999",
+                "Google_Long": "-79.388421"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388421,
+                    40.304,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Leetsdale Industrial Park",
+                "Street_Address": "Leetsdale Industrial Drive",
+                "City": "Leetsdale",
+                "State": "PA",
+                "Zip": "15056",
+                "County": "Allegheny",
+                "Google_Lat": "40.5663885358422",
+                "Google_Long": "-80.2156341075897"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.215634,
+                    40.566389,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Lower Hill District/Former Civic Arena Site",
+                "Street_Address": "1001 Fifth Ave",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15219",
+                "County": "Allegheny",
+                "Google_Lat": "40.441521",
+                "Google_Long": "-79.990587"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.990587,
+                    40.441521,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Lower Strip District",
+                "Street_Address": "Smallman Street",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15222",
+                "County": "Allegheny",
+                "Google_Lat": "40.4515028185499",
+                "Google_Long": "-79.9863374233245"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.986337,
+                    40.451503,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "McClaren Road Business Park",
+                "Street_Address": "McClaren Road",
+                "City": "Coraopolis",
+                "State": "PA",
+                "Zip": "15108",
+                "County": "Allegheny",
+                "Google_Lat": "40.4601399508586",
+                "Google_Long": "-80.2233588695526"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.223359,
+                    40.46014,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "McClaren Woods Business Park",
+                "Street_Address": "1000 McClaren Woods Drive",
+                "City": "Coraopolis",
+                "State": "PA",
+                "Zip": "15108",
+                "County": "Allegheny",
+                "Google_Lat": "40.4627357717222",
+                "Google_Long": "-80.2184879779815"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.218488,
+                    40.462736,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Meadowlands Park",
+                "Street_Address": "Meadlowlands Blvd",
+                "City": "Washington",
+                "State": "PA",
+                "Zip": "15301",
+                "County": "Washington",
+                "Google_Lat": "40.2263676224815",
+                "Google_Long": "-80.2103823423385"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.210382,
+                    40.226368,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Millennium III Professional Park",
+                "Street_Address": "600 Munir Drive\nPO Box 386",
+                "City": "Elizabeth",
+                "State": "PA",
+                "Zip": "15037",
+                "County": "Allegheny",
+                "Google_Lat": "40.220973",
+                "Google_Long": "-79.8438259999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.843826,
+                    40.220973,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Monessen Riverfront Industrial Park",
+                "Street_Address": "1000 Maronda Way",
+                "City": "Monessen",
+                "State": "PA",
+                "Zip": "15062",
+                "County": "Westmoreland",
+                "Google_Lat": "40.1624918",
+                "Google_Long": "-79.8972302999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.89723,
+                    40.162492,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Morgantown Industrial Park",
+                "Street_Address": "",
+                "City": "",
+                "State": "",
+                "Zip": "0",
+                "County": "",
+                "Google_Lat": "39.6059611",
+                "Google_Long": "-79.97493"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.97493,
+                    39.605961,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Neville Development Industrial & Office Park",
+                "Street_Address": "Grand Ave",
+                "City": "Neville Twp",
+                "State": "PA",
+                "Zip": "15225",
+                "County": "Allegheny",
+                "Google_Lat": "40.508627675942",
+                "Google_Long": "-80.1165854930877"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.116585,
+                    40.508628,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "New Economy Business Park",
+                "Street_Address": "450 15th St",
+                "City": "Ambridge",
+                "State": "PA",
+                "Zip": "15003",
+                "County": "Beaver",
+                "Google_Lat": "40.5982156136183",
+                "Google_Long": "-80.2287822961807"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.228782,
+                    40.598216,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "New Stanton Technology Park",
+                "Street_Address": "1000 Westinghouse Drive",
+                "City": "New Stanton",
+                "State": "PA",
+                "Zip": "15672",
+                "County": "Westmoreland",
+                "Google_Lat": "40.228112",
+                "Google_Long": "-79.618628"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.618628,
+                    40.228112,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "NorthChase Corporate Center",
+                "Street_Address": "Cranberry Square Drive",
+                "City": "Cranberry Twp",
+                "State": "PA",
+                "Zip": "16066",
+                "County": "Butler",
+                "Google_Lat": "40.6899603",
+                "Google_Long": "-80.1055488"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.105549,
+                    40.68996,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Northpointe",
+                "Street_Address": "Northpointe Blvd",
+                "City": "Freeport",
+                "State": "PA",
+                "Zip": "16229",
+                "County": "Armstrong",
+                "Google_Lat": "40.7537909098521",
+                "Google_Long": "-79.6446453736537"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.644645,
+                    40.753791,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Northpointe Center",
+                "Street_Address": "300 Northpointe Circle",
+                "City": "Seven Fields",
+                "State": "PA",
+                "Zip": "16046",
+                "County": "Butler",
+                "Google_Lat": "40.6843215",
+                "Google_Long": "-79.636971344367"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.636971,
+                    40.684322,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Nova Park",
+                "Street_Address": "163 Nova Drive",
+                "City": "Leechburg",
+                "State": "PA",
+                "Zip": "15656",
+                "County": "Armstrong",
+                "Google_Lat": "40.6642414396335",
+                "Google_Long": "-79.6731036901474"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.673104,
+                    40.664241,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "P&LE Flex Business Park",
+                "Street_Address": "Island Ave at Churchill Street",
+                "City": "McKees Rocks",
+                "State": "PA",
+                "Zip": "15136",
+                "County": "Allegheny",
+                "Google_Lat": "40.472840559173",
+                "Google_Long": "-80.0605541467666"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.060554,
+                    40.472841,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Parks Bend Farm Business/Industrial Park",
+                "Street_Address": "Industrial Park Road",
+                "City": "Leechburg",
+                "State": "PA",
+                "Zip": "15690",
+                "County": "Armstrong",
+                "Google_Lat": "40.6313442319249",
+                "Google_Long": "-79.5815987948668"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.581599,
+                    40.631344,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Parkway Center",
+                "Street_Address": "Parkway Center Drive",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15220",
+                "County": "Allegheny",
+                "Google_Lat": "40.4243366273004",
+                "Google_Long": "-80.0401934981346"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.040193,
+                    40.424337,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Parkway West Business Park",
+                "Street_Address": "Parkway View Drive",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15205",
+                "County": "Allegheny",
+                "Google_Lat": "40.4329267745935",
+                "Google_Long": "-80.1315146684646"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.131515,
+                    40.432927,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Penn Center East",
+                "Street_Address": "Penn Center Blvd",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15235",
+                "County": "Allegheny",
+                "Google_Lat": "40.4259604556326",
+                "Google_Long": "-79.8128145933151"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.812815,
+                    40.42596,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Penn Center West",
+                "Street_Address": "Penn Center West",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15276",
+                "County": "Allegheny",
+                "Google_Lat": "40.4291057",
+                "Google_Long": "-80.1245048"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.124505,
+                    40.429106,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Pittsburgh International Business Park",
+                "Street_Address": "Cherrington Parkway",
+                "City": "Coraopolis",
+                "State": "PA",
+                "Zip": "15108",
+                "County": "Allegheny",
+                "Google_Lat": "40.4904182859044",
+                "Google_Long": "-80.1975828409195"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.197583,
+                    40.490418,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Pittsburgh Technology Center",
+                "Street_Address": "Technology Drive",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15219",
+                "County": "Allegheny",
+                "Google_Lat": "40.4321836260648",
+                "Google_Long": "-79.9622619152069"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.962262,
+                    40.432184,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Pullman Center",
+                "Street_Address": "Hollywood Drive",
+                "City": "Butler",
+                "State": "PA",
+                "Zip": "16001",
+                "County": "Butler",
+                "Google_Lat": "40.8528873268503",
+                "Google_Long": "-79.9097174406051"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.909717,
+                    40.852887,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "R. J. Casey Industrial Park",
+                "Street_Address": "1700 Columbus Ave",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15233",
+                "County": "Allegheny",
+                "Google_Lat": "40.4568827884556",
+                "Google_Long": "-80.0320798158645"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.03208,
+                    40.456883,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "RIDC Duquesne",
+                "Street_Address": "North Linden St.",
+                "City": "Duquesne",
+                "State": "PA",
+                "Zip": "15110",
+                "County": "Allegheny",
+                "Google_Lat": "40.380126476556",
+                "Google_Long": "-79.8477101325988"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.84771,
+                    40.380126,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "RIDC Industrial Park",
+                "Street_Address": "Gamma Drive",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15238",
+                "County": "Allegheny",
+                "Google_Lat": "40.5001436288838",
+                "Google_Long": "-79.8683041334152"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.868304,
+                    40.500144,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "RIDC Innovation Ridge",
+                "Street_Address": "Innovation Drive",
+                "City": "Marshall Twp",
+                "State": "PA",
+                "Zip": "15090",
+                "County": "Allegheny",
+                "Google_Lat": "40.6571200786574",
+                "Google_Long": "-80.1060926914215"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.106093,
+                    40.65712,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "RIDC Keystone Commons",
+                "Street_Address": "Braddock Ave",
+                "City": "East Pittsburgh",
+                "State": "PA",
+                "Zip": "15112",
+                "County": "Allegheny",
+                "Google_Lat": "40.3977304734027",
+                "Google_Long": "-79.8348006606102"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.834801,
+                    40.39773,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "RIDC Lawrenceville Technology Center",
+                "Street_Address": "Hatfield Street",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15201",
+                "County": "Allegheny",
+                "Google_Lat": "40.4753624378486",
+                "Google_Long": "-79.9615377187728"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.961538,
+                    40.475362,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "RIDC McKeesport",
+                "Street_Address": "Industry Road",
+                "City": "McKeesport",
+                "State": "PA",
+                "Zip": "15132",
+                "County": "Allegheny",
+                "Google_Lat": "40.3533142575932",
+                "Google_Long": "-79.8604023456573"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.860402,
+                    40.353314,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "RIDC Neshannock Business Park",
+                "Street_Address": "Green Ridge Road",
+                "City": "New Castle",
+                "State": "PA",
+                "Zip": "16105",
+                "County": "Lawrence",
+                "Google_Lat": "41.078763",
+                "Google_Long": "-80.3639519999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.363952,
+                    41.078763,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "RIDC Park West",
+                "Street_Address": "Industry Drive",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15275",
+                "County": "Allegheny",
+                "Google_Lat": "40.4635275587501",
+                "Google_Long": "-80.203805565834"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.203806,
+                    40.463528,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "RIDC Thorn Hill Industrial Park",
+                "Street_Address": "Commonwealth Drive",
+                "City": "Warrendale",
+                "State": "PA",
+                "Zip": "15086",
+                "County": "Allegheny",
+                "Google_Lat": "40.6731522431725",
+                "Google_Long": "-80.1083135604858"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.108314,
+                    40.673152,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "RIDC Westmoreland",
+                "Street_Address": "1001 Technology Drive",
+                "City": "Mt. Pleasant",
+                "State": "PA",
+                "Zip": "15688",
+                "County": "Westmoreland",
+                "Google_Lat": "40.185938928747",
+                "Google_Long": "-79.5740282535553"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.574028,
+                    40.185939,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Robert Casey Industrial Park",
+                "Street_Address": "1800 Preble Ave",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15233",
+                "County": "Allegheny",
+                "Google_Lat": "40.4564805",
+                "Google_Long": "-80.0324610999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.032461,
+                    40.456481,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Rockpointe Business Airpark",
+                "Street_Address": "Rock Airport, Mesa Drive",
+                "City": "Tarentum",
+                "State": "PA",
+                "Zip": "15084",
+                "County": "Allegheny",
+                "Google_Lat": "40.6029566007224",
+                "Google_Long": "-79.8199331760406"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.819933,
+                    40.602957,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Route 30 Industrial Park",
+                "Street_Address": "Station Street",
+                "City": "Imperial",
+                "State": "PA",
+                "Zip": "15126",
+                "County": "Allegheny",
+                "Google_Lat": "40.4507843681162",
+                "Google_Long": "-80.2429550886154"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.242955,
+                    40.450784,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Slippery Rock Tech Park",
+                "Street_Address": "Innovation Drive",
+                "City": "Slippery Rock",
+                "State": "PA",
+                "Zip": "16057",
+                "County": "Butler",
+                "Google_Lat": "41.0656496671796",
+                "Google_Long": "-80.0457751750946"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.045775,
+                    41.06565,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "South Greensburg Commons",
+                "Street_Address": "125 Theobold Ave",
+                "City": "Greensburg",
+                "State": "PA",
+                "Zip": "15601",
+                "County": "Westmoreland",
+                "Google_Lat": "40.2761451699399",
+                "Google_Long": "-79.550561606884"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.550562,
+                    40.276145,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "South Hills Industrial Park",
+                "Street_Address": "1200 Lebanon Road",
+                "City": "West Mifflin",
+                "State": "PA",
+                "Zip": "15122",
+                "County": "Allegheny",
+                "Google_Lat": "40.3574348774432",
+                "Google_Long": "-79.9390286207199"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.939029,
+                    40.357435,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "South Side Works",
+                "Street_Address": "Hot Metal Street",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15203",
+                "County": "Allegheny",
+                "Google_Lat": "40.4264676682235",
+                "Google_Long": "-79.9632355570793"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963236,
+                    40.426468,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Southpointe",
+                "Street_Address": "Technology Drive",
+                "City": "Canonsburg",
+                "State": "PA",
+                "Zip": "15317",
+                "County": "Washington",
+                "Google_Lat": "40.2798694388913",
+                "Google_Long": "-80.1720106601715"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.172011,
+                    40.279869,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Southpointe II",
+                "Street_Address": "Horizon View Drive",
+                "City": "Canonsburg",
+                "State": "PA",
+                "Zip": "15317",
+                "County": "Washington",
+                "Google_Lat": "40.2742051947481",
+                "Google_Long": "-80.1685774326324"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.168577,
+                    40.274205,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Speers Industrial Park",
+                "Street_Address": "Guttman Ave",
+                "City": "Charleroi",
+                "State": "PA",
+                "Zip": "15022",
+                "County": "Washington",
+                "Google_Lat": "40.1204268",
+                "Google_Long": "-79.8868248"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.886825,
+                    40.120427,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Stonewood Industrial Park",
+                "Street_Address": "",
+                "City": "",
+                "State": "",
+                "Zip": "0",
+                "County": "",
+                "Google_Lat": "40.6392361",
+                "Google_Long": "-80.065283"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.065283,
+                    40.639236,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Summit at Cranberry, The",
+                "Street_Address": "Cranberry Springs Drive",
+                "City": "Cranberry Twp",
+                "State": "PA",
+                "Zip": "16066",
+                "County": "Butler",
+                "Google_Lat": "40.6869514661198",
+                "Google_Long": "-80.088003873825"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.088004,
+                    40.686951,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Tech One Research & Office Park",
+                "Street_Address": "Tech Center Drive",
+                "City": "Monroeville",
+                "State": "PA",
+                "Zip": "15146",
+                "County": "Allegheny",
+                "Google_Lat": "40.4317978624546",
+                "Google_Long": "-79.7823205590248"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.782321,
+                    40.431798,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Thompson Business Park",
+                "Street_Address": "Thomson Park Drive",
+                "City": "Cranberry Twp",
+                "State": "PA",
+                "Zip": "16066",
+                "County": "Butler",
+                "Google_Lat": "40.6958734",
+                "Google_Long": "-80.1128598999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.11286,
+                    40.695873,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Tri-County Commerce Park",
+                "Street_Address": "State Route 2006",
+                "City": "Freedom",
+                "State": "PA",
+                "Zip": "15042",
+                "County": "Beaver",
+                "Google_Lat": "40.677589",
+                "Google_Long": "-80.1523619999999"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.152362,
+                    40.677589,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "U-PARC (University of Pittsburgh Applied Research Center)",
+                "Street_Address": "3107 William Pitt Way",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15238",
+                "County": "Allegheny",
+                "Google_Lat": "40.5434961",
+                "Google_Long": "-79.827738"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.827738,
+                    40.543496,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Victory Road Business Park",
+                "Street_Address": "Victory Road",
+                "City": "Saxonburg",
+                "State": "PA",
+                "Zip": "16056",
+                "County": "Butler",
+                "Google_Lat": "40.7337629052243",
+                "Google_Long": "-79.8469698429107"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.84697,
+                    40.733763,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Village at Cranberry Woods",
+                "Street_Address": "Rte 228 and Franklin Rd",
+                "City": "Cranberry Twp",
+                "State": "PA",
+                "Zip": "16066",
+                "County": "Butler",
+                "Google_Lat": "40.6832497144032",
+                "Google_Long": "-80.0758427381515"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.075843,
+                    40.68325,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Vista Business Park",
+                "Street_Address": "Vista Park Drive",
+                "City": "Pittsburgh",
+                "State": "PA",
+                "Zip": "15205",
+                "County": "Allegheny",
+                "Google_Lat": "40.4320039625504",
+                "Google_Long": "-80.1352161169052"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.135216,
+                    40.432004,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Waltz Mill Rail Park",
+                "Street_Address": "Waltz Mill Road",
+                "City": "Ruffs Dale",
+                "State": "PA",
+                "Zip": "15679",
+                "County": "Westmoreland",
+                "Google_Lat": "40.2159964471292",
+                "Google_Long": "-79.6648371219635"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.664837,
+                    40.215996,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Westmoreland County Industrial Park I",
+                "Street_Address": "Industrial Park Road",
+                "City": "Greensburg",
+                "State": "PA",
+                "Zip": "15601",
+                "County": "Westmoreland",
+                "Google_Lat": "40.3100816351362",
+                "Google_Long": "-79.4915449619293"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.491545,
+                    40.310082,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Westmoreland County Industrial Park II",
+                "Street_Address": "Hyde Park Road",
+                "City": "Leechburg",
+                "State": "PA",
+                "Zip": "15656",
+                "County": "Westmoreland",
+                "Google_Lat": "40.610466548366",
+                "Google_Long": "-79.6047395467758"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.60474,
+                    40.610467,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Westmoreland County Industrial Park III",
+                "Street_Address": "Enterprise Drive",
+                "City": "Export",
+                "State": "PA",
+                "Zip": "15632",
+                "County": "Westmoreland",
+                "Google_Lat": "40.4019607416724",
+                "Google_Long": "-79.6133816242218"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.613382,
+                    40.401961,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Wimmerton Industrial Park",
+                "Street_Address": "Wimmerton Industrial Park",
+                "City": "Latrobe",
+                "State": "PA",
+                "Zip": "15650",
+                "County": "Westmoreland",
+                "Google_Lat": "40.3047543",
+                "Google_Long": "-79.3959696"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39597,
+                    40.304754,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": "relativeToGround",
+                "tessellate": -1,
+                "extrude": 1,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Youngwood Industrial Center",
+                "Street_Address": "67 E Hillis Street",
+                "City": "Youngwood",
+                "State": "PA",
+                "Zip": "15697",
+                "County": "Westmoreland",
+                "Google_Lat": "40.2317082403289",
+                "Google_Long": "-79.5769947767257"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.576995,
+                    40.231708,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": null,
+                "timestamp": null,
+                "begin": null,
+                "end": null,
+                "altitudeMode": null,
+                "tessellate": -1,
+                "extrude": 0,
+                "visibility": -1,
+                "drawOrder": null,
+                "icon": null,
+                "Name_of_Park": "Findlay Industrial Park",
+                "Street_Address": "Solar Dr",
+                "City": "Imperial",
+                "State": "PA",
+                "Zip": "15126",
+                "County": "Allegheny",
+                "Google_Lat": "40.4318509",
+                "Google_Long": "-80.3507618"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.30130631945222,
+                    40.44132206855786,
+                    0.0
+                ]
+            }
+        }
+    ]
+}

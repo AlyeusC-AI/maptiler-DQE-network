@@ -22,6 +22,214 @@ body {
 .maplibregl-control-container {
   .maplibregl-ctrl-top-left {
     padding: 10px;
+    .maplibregl-ctrl.search-card-wrapper {
+      margin: 0;
+      font-size: 16px;
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+      
+      .search-card {
+        width: 495px;
+        min-height: 288px;
+        border-radius: 6px 80px 6px 6px;
+        overflow: visible;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        
+        .search-card__top {
+          background: #232d4b;
+          height: 104px;
+          border-radius: 6px 80px 0 0;
+          color: #fff;
+          font-size: 24pt;
+          line-height: 104px;
+          padding-left: 40px;
+          font-weight: 600;
+        }
+        
+        .search-card__second-top {
+          background: #eff0f2;
+          padding: 14px 42px;
+        }
+        
+        .search-card__interval {
+          background: #ffffff;
+          padding: 20px 42px;
+          border-top: 1px solid #f0f0f0;
+        }
+        
+        .search-card__middle {
+          background: #ffffff;
+          padding: 42px;
+          transition: max-height 0.3s ease;
+          max-height: none;
+          overflow: visible;
+        }
+        
+        .search-card__bottom {
+          border-radius: 0 0 6px 6px;
+          background: #eff0f2;
+          padding: 14px 42px;
+        }
+        
+        .search-card__row {
+          display: block;
+        }
+        
+        .search-card__circle-btn {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          border: none;
+          background: #e37325;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 18px;
+          position: absolute;
+          right: 8px;
+          top: 8px;
+          z-index: 2;
+        }
+        
+        .search-card__circle-btn::after {
+          content: '>';
+        }
+        
+        .search-card__input-wrap { 
+          position: relative; 
+          width: 100%;
+          overflow: visible;
+        }
+        
+        .search-card__input {
+          height: 48px;
+          border: 1px solid #b2b2b2;
+          border-radius: 2px 2px 2px 14px;
+          padding: 0 48px 0 14px;
+          width: 100%;
+          background: #ffffff;
+          font-size: 16px;
+          box-sizing: border-box;
+        }
+        
+        .search-card__link-btn {
+          border: none;
+          background: transparent;
+          color: #232d4b;
+          font-size: 14pt;
+          cursor: pointer;
+          padding: 0;
+        }
+        
+        .search-card__link-btn--top {
+          background: #eff0f2;
+          display: block; 
+          margin-bottom: 10px; 
+        }
+        
+        .search-card__plus-btn {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background: #acacae;
+          color: #777777;
+          font-size: 18pt;
+          border: 1px solid #b2b2b2;
+          cursor: pointer;
+          transition: background 0.2s ease, color 0.2s ease;
+        }
+        
+        .search-card__plus-btn:hover { 
+          background: #8f8f91; 
+          color: #111; 
+        }
+        
+        .search-card__primary-btn {
+          height: 32px;
+          border-radius: 6px;
+          border: 1px solid #b2b2b2;
+          background: #e37325;
+          color: #fff;
+          padding: 0 16px;
+          cursor: pointer;
+          font-weight: 600;
+          transition: opacity 0.2s ease, cursor 0.2s ease;
+        }
+        
+        .search-card__primary-btn:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+          background: #cccccc;
+        }
+        
+        .search-card__secondary-btn {
+          height: 32px;
+          border-radius: 6px;
+          border: 1px solid #e37325;
+          background: transparent;
+          color: #e37325;
+          padding: 0 16px;
+          cursor: pointer;
+          font-weight: 600;
+        }
+        .search-card__interval { margin-top: 12px; display: grid; gap: 10px; }
+        .search-card__actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+        .search-card__message { color: #232d4b; }
+        .search-card__distance { color: #232d4b; font-size: 16px; }
+        .search-card__inputs { display: grid; gap: 10px; }
+        .search-card__plus-row { 
+          display: flex; 
+          justify-content: center; 
+          margin-top: 12px; 
+        }
+        .search-card__search-row { 
+          display: flex; 
+          justify-content: center; 
+          margin-top: 16px; 
+        }
+        .search-card__bottom-row { display: flex; align-items: center; justify-content: space-between; }
+        .search-card__file-btn {
+          height: 32px;
+          border-radius: 6px;
+          border: 1px solid #b2b2b2;
+          background: #707070;
+          color: #fff;
+          padding: 0 12px;
+          cursor: pointer;
+        }
+        .search-card__suggest {
+          position: absolute;
+          top: 48px;
+          left: 0;
+          right: 0;
+          background: #fff;
+          border: 1px solid #b2b2b2;
+          border-top: none;
+          border-radius: 0 0 6px 6px;
+          z-index: 1000;
+          display: none;
+          max-height: 200px;
+          overflow-y: auto;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .search-card__suggest-item { 
+          padding: 12px 16px; 
+          cursor: pointer; 
+          border-bottom: 1px solid #f0f0f0;
+          font-size: 14px;
+          line-height: 1.4;
+        }
+        .search-card__suggest-item:last-child { border-bottom: none; }
+        .search-card__suggest-item:hover { 
+          background: #f8f9fa; 
+          color: #232d4b;
+        }
+      }
+    }
     .maplibregl-ctrl.proximity-search {
       margin: 0;
       font-size: 16px;

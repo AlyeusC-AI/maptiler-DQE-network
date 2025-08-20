@@ -12,6 +12,7 @@ import { KMZUploadControl } from './kmz-upload.js';
 import { AddressUploadControl } from './address-upload.js';
 import { MultiAddressSearchControl } from './multi-address-search.js';
 import { PluginSettingsControl } from './plugin-settings.js';
+import { SearchCardControl } from './search-card.js';
 
 class Map {
   constructor(config) {
@@ -140,6 +141,10 @@ class Map {
       const pluginSettings = new PluginSettingsControl(this.config);
       map.addControl(pluginSettings, 'top-right');
       
+      // Search Card (new primary UI)
+      const searchCardControl = new SearchCardControl(map, this.config, (m) => this.getRelevantFeatures(m), (m) => this.resetMapBounds(m));
+      map.addControl(searchCardControl, 'top-left');
+
       // Feature 1: KMZ upload control (conditional)
       const kmzControl = new KMZUploadControl();
       map.addControl(kmzControl, 'top-right');
@@ -155,6 +160,9 @@ class Map {
       // Set up feature toggling based on settings
       pluginSettings.addObserver((feature, enabled) => {
         switch (feature) {
+          case 'search-card':
+            searchCardControl._container.style.display = enabled ? 'block' : 'none';
+            break;
           case 'kmz-upload':
             kmzControl._container.style.display = enabled ? 'block' : 'none';
             break;
@@ -168,6 +176,9 @@ class Map {
       });
       
       // Apply initial settings
+      if (!pluginSettings.isFeatureEnabled('search-card')) {
+        searchCardControl._container.style.display = 'none';
+      }
       if (!pluginSettings.isFeatureEnabled('kmz-upload')) {
         kmzControl._container.style.display = 'none';
       }

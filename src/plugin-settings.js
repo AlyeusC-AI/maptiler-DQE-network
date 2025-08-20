@@ -42,6 +42,14 @@ class PluginSettingsControl {
     const togglesContainer = document.createElement('div');
     togglesContainer.style.marginBottom = '15px';
 
+    // Feature 0: Search Card
+    const searchCardToggle = this.createFeatureToggle(
+      'search-card',
+      'Search Card',
+      'Enable the primary Search Card (single/multi search, CSV upload)',
+      this.settings.features['search-card']
+    );
+
     // Feature 1: KMZ Upload
     const kmzToggle = this.createFeatureToggle(
       'kmz-upload',
@@ -84,6 +92,7 @@ class PluginSettingsControl {
       true // disabled for now
     );
 
+    togglesContainer.appendChild(searchCardToggle);
     togglesContainer.appendChild(kmzToggle);
     togglesContainer.appendChild(addressToggle);
     togglesContainer.appendChild(multiAddressToggle);
@@ -241,9 +250,10 @@ class PluginSettingsControl {
     
     const defaultSettings = {
       features: {
-        'kmz-upload': configDefaults['kmz-upload'] !== undefined ? configDefaults['kmz-upload'] : true,
-        'address-upload': configDefaults['address-upload'] !== undefined ? configDefaults['address-upload'] : true,
-        'multi-address-search': configDefaults['multi-address-search'] !== undefined ? configDefaults['multi-address-search'] : true,
+        'search-card': configDefaults['search-card'] !== undefined ? configDefaults['search-card'] : true,
+        'kmz-upload': configDefaults['kmz-upload'] !== undefined ? configDefaults['kmz-upload'] : false,
+        'address-upload': configDefaults['address-upload'] !== undefined ? configDefaults['address-upload'] : false,
+        'multi-address-search': configDefaults['multi-address-search'] !== undefined ? configDefaults['multi-address-search'] : false,
         'address-recording': configDefaults['address-recording'] !== undefined ? configDefaults['address-recording'] : false,
         'building-styles': configDefaults['building-styles'] !== undefined ? configDefaults['building-styles'] : false
       }
@@ -304,9 +314,10 @@ class PluginSettingsControl {
       
       this.settings = {
         features: {
-          'kmz-upload': configDefaults['kmz-upload'] !== undefined ? configDefaults['kmz-upload'] : true,
-          'address-upload': configDefaults['address-upload'] !== undefined ? configDefaults['address-upload'] : true,
-          'multi-address-search': configDefaults['multi-address-search'] !== undefined ? configDefaults['multi-address-search'] : true,
+          'search-card': configDefaults['search-card'] !== undefined ? configDefaults['search-card'] : true,
+          'kmz-upload': configDefaults['kmz-upload'] !== undefined ? configDefaults['kmz-upload'] : false,
+          'address-upload': configDefaults['address-upload'] !== undefined ? configDefaults['address-upload'] : false,
+          'multi-address-search': configDefaults['multi-address-search'] !== undefined ? configDefaults['multi-address-search'] : false,
           'address-recording': configDefaults['address-recording'] !== undefined ? configDefaults['address-recording'] : false,
           'building-styles': configDefaults['building-styles'] !== undefined ? configDefaults['building-styles'] : false
         }

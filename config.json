@@ -1,0 +1,18 @@
+{
+    "target": "map",
+    "key": "cz06vUtOFk76h4nTlSy3",
+    "styleUrl": "https://api.maptiler.com/maps/019602ec-bcb3-735c-ba8c-c5ae262c65dc/style.json?key=cz06vUtOFk76h4nTlSy3",
+    "markerImage": "",
+    "showNavigationControls": false,
+    "showLayers": false,
+    "showProximitySearch": false,
+    "showResults": false,
+    "controlZoom": true,
+    "minZoom": 3.25,
+    "maxBounds": null,
+    "layersTitle": "Layers",
+    "featuredTitle": "Recently Added",
+    "resultsTitle": "Results",
+    "featuredHeaderColor": "#ffaa00"
+
+}
