@@ -31,6 +31,16 @@ class SearchCardControl {
     this.topEl = document.createElement('div');
     this.topEl.className = 'search-card__top';
     this.topEl.innerHTML = 'Search our <b>fiber network</b>';
+    
+    // Add collapse functionality to top section
+    this.topEl.addEventListener('click', () => {
+      const isCollapsed = this.topEl.classList.contains('collapsed');
+      if (isCollapsed) {
+        this.expandCard();
+      } else {
+        this.collapseCard();
+      }
+    });
 
     this.middleEl = document.createElement('div');
     this.middleEl.className = 'search-card__middle';
@@ -57,10 +67,15 @@ class SearchCardControl {
 
   // Helper method to clear all dynamic elements
   clearDynamicElements() {
-    // Remove second top navigation if exists
+    // Remove second top navigation if exists with transition
     const existingSecondTop = this._container.querySelector('.search-card__second-top');
     if (existingSecondTop) {
-      existingSecondTop.remove();
+      existingSecondTop.classList.remove('active');
+      setTimeout(() => {
+        if (existingSecondTop.parentNode) {
+          existingSecondTop.remove();
+        }
+      }, 300); // Match transition duration
     }
 
     // Remove interval actions if exists
@@ -146,6 +161,11 @@ class SearchCardControl {
 
     // Add second top row to the card (not middle)
     this._container.querySelector('.search-card').insertBefore(secondTopRow, this.middleEl);
+    
+    // Trigger transition after a brief delay to ensure DOM is ready
+    setTimeout(() => {
+      secondTopRow.classList.add('active');
+    }, 10);
 
     this.inputsWrap = document.createElement('div');
     this.inputsWrap.className = 'search-card__inputs';
@@ -458,6 +478,11 @@ class SearchCardControl {
     backBtn.addEventListener('click', () => this.renderSingleMode());
     navSection.appendChild(backBtn);
     this._container.querySelector('.search-card').insertBefore(navSection, this.middleEl);
+    
+    // Trigger transition after a brief delay to ensure DOM is ready
+    setTimeout(() => {
+      navSection.classList.add('active');
+    }, 10);
 
     if (isOnNet) {
       // Case 1: On-net
@@ -538,6 +563,11 @@ class SearchCardControl {
     backBtn.addEventListener('click', () => this.renderMultiMode());
     navSection.appendChild(backBtn);
     this._container.querySelector('.search-card').insertBefore(navSection, this.middleEl);
+    
+    // Trigger transition after a brief delay to ensure DOM is ready
+    setTimeout(() => {
+      navSection.classList.add('active');
+    }, 10);
 
     // Case 4: Multi-address results
     this.setTopTitle("You're close to our Network!");
@@ -642,6 +672,31 @@ class SearchCardControl {
       this.searchManyBtn.style.opacity = '0.5';
       this.searchManyBtn.style.cursor = 'not-allowed';
     }
+  }
+
+  // Helper methods for collapse/expand functionality
+  collapseCard() {
+    this.topEl.classList.add('collapsed');
+    this.middleEl.classList.add('collapsed');
+    this.bottomEl.classList.add('collapsed');
+    
+    // Also collapse any dynamically added sections
+    const dynamicSections = this._container.querySelectorAll('.search-card__second-top, .search-card__interval');
+    dynamicSections.forEach(section => {
+      section.classList.add('collapsed');
+    });
+  }
+
+  expandCard() {
+    this.topEl.classList.remove('collapsed');
+    this.middleEl.classList.remove('collapsed');
+    this.bottomEl.classList.remove('collapsed');
+    
+    // Also expand any dynamically added sections
+    const dynamicSections = this._container.querySelectorAll('.search-card__second-top, .search-card__interval');
+    dynamicSections.forEach(section => {
+      section.classList.remove('collapsed');
+    });
   }
 }
 

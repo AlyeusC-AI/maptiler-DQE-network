@@ -13,6 +13,7 @@ import { AddressUploadControl } from './address-upload.js';
 import { MultiAddressSearchControl } from './multi-address-search.js';
 import { PluginSettingsControl } from './plugin-settings.js';
 import { SearchCardControl } from './search-card.js';
+import { MapLayersControl } from './map-layers-control.js';
 
 class Map {
   constructor(config) {
@@ -129,9 +130,9 @@ class Map {
         map.addControl(new ProximitySearch(this.config.key, this.config.markerImage, features, this), 'top-left');
       }
       
-      if (featuredLayers.length) {
-        map.addControl(new FeaturedPanelControl(featuredLayers, this.config.featuredTitle, this.config.featuredHeaderColor), 'top-left');
-      }
+      // if (featuredLayers.length) {
+      //   map.addControl(new FeaturedPanelControl(featuredLayers, this.config.featuredTitle, this.config.featuredHeaderColor), 'top-left');
+      // }
       
       if (this.config.showResults) {
         map.addControl(new ResultsPanelControl(this.config.resultsTitle), 'top-left');
@@ -144,6 +145,10 @@ class Map {
       // Search Card (new primary UI)
       const searchCardControl = new SearchCardControl(map, this.config, (m) => this.getRelevantFeatures(m), (m) => this.resetMapBounds(m));
       map.addControl(searchCardControl, 'top-left');
+
+      // Map Layers Control
+      const mapLayersControl = new MapLayersControl(map, this.config);
+      map.addControl(mapLayersControl, 'top-left');
 
       // Feature 1: KMZ upload control (conditional)
       const kmzControl = new KMZUploadControl();
@@ -163,6 +168,9 @@ class Map {
           case 'search-card':
             searchCardControl._container.style.display = enabled ? 'block' : 'none';
             break;
+          case 'map-layers':
+            mapLayersControl._container.style.display = enabled ? 'block' : 'none';
+            break;
           case 'kmz-upload':
             kmzControl._container.style.display = enabled ? 'block' : 'none';
             break;
@@ -178,6 +186,9 @@ class Map {
       // Apply initial settings
       if (!pluginSettings.isFeatureEnabled('search-card')) {
         searchCardControl._container.style.display = 'none';
+      }
+      if (!pluginSettings.isFeatureEnabled('map-layers')) {
+        mapLayersControl._container.style.display = 'none';
       }
       if (!pluginSettings.isFeatureEnabled('kmz-upload')) {
         kmzControl._container.style.display = 'none';

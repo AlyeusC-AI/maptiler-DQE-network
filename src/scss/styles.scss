@@ -1,7 +1,7 @@
 *{box-sizing: border-box}
 body {
   font-size: 16px;
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Arial, Helvetica, "Segoe UI", Verdana, Geneva, Tahoma, sans-serif;
 }
 #map {
   .maplibregl-canvas-container {
@@ -20,57 +20,122 @@ body {
   }
 }
 .maplibregl-control-container {
-  .maplibregl-ctrl-top-left {
-    padding: 10px;
-    .maplibregl-ctrl.search-card-wrapper {
-      margin: 0;
-      font-size: 16px;
-      padding: 0;
-      background: transparent;
-      box-shadow: none;
+     .maplibregl-ctrl-top-left {
+     padding: 10px;
+     
+     // General spacing rule for all control cards
+     .maplibregl-ctrl {
+       margin-bottom: 40px;
+       
+       &:last-child {
+         margin-bottom: 0;
+       }
+     }
+        .maplibregl-ctrl.search-card-wrapper {
+        font-size: 16px;
+        margin: 40px 0px;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
       
-      .search-card {
-        width: 495px;
-        min-height: 288px;
-        border-radius: 6px 80px 6px 6px;
-        overflow: visible;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        .search-card {
+         width: 495px;
+         // min-height: 288px;
+         border-radius: 6px 80px 6px 6px;
+         overflow: visible;
+         box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+         transition: min-height 0.3s ease, height 0.3s ease;
         
-        .search-card__top {
-          background: #232d4b;
-          height: 104px;
-          border-radius: 6px 80px 0 0;
-          color: #fff;
-          font-size: 24pt;
-          line-height: 104px;
-          padding-left: 40px;
-          font-weight: 600;
-        }
+                 .search-card__top {
+           background: #232d4b;
+           height: 104px;
+           border-radius: 6px 80px 0 0;
+           color: #fff;
+           font-size: 24pt;
+           line-height: 104px;
+           padding-left: 40px;
+           font-weight: 600;
+           cursor: pointer;
+           position: relative;
+           transition: all 0.3s ease;
+           
+           &::before {
+             content: '−';
+             position: absolute;
+             left: 20px;
+             top: 50%;
+             transform: translateY(-50%);
+             font-size: 32px;
+             font-weight: bold;
+             transition: transform 0.3s ease;
+           }
+           
+           &.collapsed {
+             &::before {
+               transform: translateY(-50%) rotate(180deg);
+             }
+           }
+         }
         
-        .search-card__second-top {
-          background: #eff0f2;
-          padding: 14px 42px;
-        }
+          .search-card__second-top {
+           background: #eff0f2;
+           padding: 14px 42px;
+           transition: all 0.3s ease;
+           max-height: 0;
+           overflow: hidden;
+           opacity: 0;
+           
+           &.active {
+             max-height: 60px;
+             opacity: 1;
+           }
+           
+           &.collapsed {
+             max-height: 0;
+             padding: 0 42px;
+             opacity: 0;
+           }
+         }
         
-        .search-card__interval {
-          background: #ffffff;
-          padding: 20px 42px;
-          border-top: 1px solid #f0f0f0;
-        }
+                 .search-card__interval {
+           background: #ffffff;
+           padding: 20px 42px;
+           border-top: 1px solid #f0f0f0;
+           transition: all 0.3s ease;
+           
+           &.collapsed {
+             max-height: 0;
+             padding: 0 42px;
+             overflow: hidden;
+           }
+         }
         
-        .search-card__middle {
-          background: #ffffff;
-          padding: 42px;
-          transition: max-height 0.3s ease;
-          max-height: none;
-          overflow: visible;
-        }
+          .search-card__middle {
+           background: #ffffff;
+           padding: 42px;
+           transition: max-height 0.3s ease, padding 0.3s ease;
+           max-height: none;
+           overflow: visible;
+           
+           &.collapsed {
+             max-height: 0;
+             padding: 0 42px;
+             overflow: hidden;
+           }
+         }
         
-        .search-card__bottom {
-          border-radius: 0 0 6px 6px;
-          background: #eff0f2;
-          padding: 14px 42px;
-        }
+                 .search-card__bottom {
+           border-radius: 0 0 6px 6px;
+           background: #eff0f2;
+           padding: 14px 42px;
+           transition: all 0.3s ease;
+           
+           &.collapsed {
+             max-height: 0;
+             padding: 0 42px;
+             overflow: hidden;
+           }
+         }
         
         .search-card__row {
           display: block;
@@ -127,8 +192,7 @@ body {
         
         .search-card__link-btn--top {
           background: #eff0f2;
-          display: block; 
-          margin-bottom: 10px; 
+          display: block;
         }
         
         .search-card__plus-btn {
@@ -198,24 +262,28 @@ body {
           border: 1px solid #b2b2b2;
           background: #707070;
           color: #fff;
-          padding: 0 12px;
+          text-align: center;
           cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 6px 16px;
         }
-        .search-card__suggest {
-          position: absolute;
-          top: 48px;
-          left: 0;
-          right: 0;
-          background: #fff;
-          border: 1px solid #b2b2b2;
-          border-top: none;
-          border-radius: 0 0 6px 6px;
-          z-index: 1000;
-          display: none;
-          max-height: 200px;
-          overflow-y: auto;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
+                 .search-card__suggest {
+           position: absolute;
+           top: 48px;
+           left: 0;
+           right: 0;
+           background: #fff;
+           border: 1px solid #b2b2b2;
+           border-top: none;
+           border-radius: 0 0 6px 6px;
+           z-index: 10;
+           display: none;
+           max-height: 130px;
+           overflow-y: auto;
+           box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+         }
         .search-card__suggest-item { 
           padding: 12px 16px; 
           cursor: pointer; 
@@ -230,6 +298,130 @@ body {
         }
       }
     }
+    
+                   // Map Layers Control Styles
+      .maplibregl-ctrl.map-layers-wrapper {
+        margin: 0;
+        font-size: 16px;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+      
+      .map-layers-card {
+        width: 495px;
+        // min-height: 200px;
+        border-radius: 6px 80px 6px 6px;
+        overflow: visible;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        
+                 .map-layers-card__top {
+           background: #232d4b;
+           height: 104px;
+           border-radius: 6px 80px 0 0;
+           color: #fff;
+           font-size: 24pt;
+           line-height: 104px;
+           padding-left: 40px;
+           font-weight: 600;
+           cursor: pointer;
+           position: relative;
+           transition: all 0.3s ease;
+           
+           &::before {
+             content: '−';
+             position: absolute;
+             left: 20px;
+             top: 50%;
+             transform: translateY(-50%);
+             font-size: 32px;
+             font-weight: bold;
+             transition: transform 0.3s ease;
+           }
+           
+           &.collapsed {
+             &::before {
+               transform: translateY(-50%) rotate(180deg);
+             }
+           }
+         }
+        
+                 .map-layers-card__middle {
+           background: #ffffff;
+           padding: 20px 42px;
+           border-radius: 0 0 6px 6px;
+           transition: max-height 0.3s ease, padding 0.3s ease;
+           overflow: visible;
+           
+           &.collapsed {
+             max-height: 0;
+             padding: 0 42px;
+             overflow: hidden;
+           }
+         }
+        
+        .map-layers-card__toggle-group {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 8px 0;
+          
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        
+        .map-layers-card__toggle-btn {
+          width: 50px;
+          height: 24px;
+          border-radius: 24px;
+          background: #ccc;
+          cursor: pointer;
+          position: relative;
+          transition: 0.4s;
+          border: none;
+          
+          &::before {
+            content: '';
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+          }
+          
+          &.active {
+            background: #e37325;
+            
+            &::before {
+              transform: translateX(26px);
+            }
+          }
+          
+          &:hover {
+            box-shadow: 0 0 1px #e37325;
+          }
+        }
+        
+        .map-layers-card__label {
+          font-size: 14px;
+          font-weight: 500;
+          color: #232d4b;
+        }
+        
+        .map-layers-card__color-circle {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          border: 1px solid #6e6e6e;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+      }
+    }
+    
     .maplibregl-ctrl.proximity-search {
       margin: 0;
       font-size: 16px;

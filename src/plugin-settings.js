@@ -74,7 +74,15 @@ class PluginSettingsControl {
       this.settings.features['multi-address-search']
     );
 
-    // Feature 4: Address Recording (placeholder for future)
+    // Feature 4: Map Layers
+    const mapLayersToggle = this.createFeatureToggle(
+      'map-layers',
+      'Map Layers',
+      'Enable toggle controls for Business Parks, Data Centers, and On-Net Buildings',
+      this.settings.features['map-layers']
+    );
+
+    // Feature 5: Address Recording (placeholder for future)
     const addressRecordingToggle = this.createFeatureToggle(
       'address-recording',
       'Address Recording',
@@ -96,6 +104,7 @@ class PluginSettingsControl {
     togglesContainer.appendChild(kmzToggle);
     togglesContainer.appendChild(addressToggle);
     togglesContainer.appendChild(multiAddressToggle);
+    togglesContainer.appendChild(mapLayersToggle);
     togglesContainer.appendChild(addressRecordingToggle);
     togglesContainer.appendChild(buildingStylesToggle);
 
@@ -254,6 +263,7 @@ class PluginSettingsControl {
         'kmz-upload': configDefaults['kmz-upload'] !== undefined ? configDefaults['kmz-upload'] : false,
         'address-upload': configDefaults['address-upload'] !== undefined ? configDefaults['address-upload'] : false,
         'multi-address-search': configDefaults['multi-address-search'] !== undefined ? configDefaults['multi-address-search'] : false,
+        'map-layers': configDefaults['map-layers'] !== undefined ? configDefaults['map-layers'] : true,
         'address-recording': configDefaults['address-recording'] !== undefined ? configDefaults['address-recording'] : false,
         'building-styles': configDefaults['building-styles'] !== undefined ? configDefaults['building-styles'] : false
       }
@@ -318,6 +328,7 @@ class PluginSettingsControl {
           'kmz-upload': configDefaults['kmz-upload'] !== undefined ? configDefaults['kmz-upload'] : false,
           'address-upload': configDefaults['address-upload'] !== undefined ? configDefaults['address-upload'] : false,
           'multi-address-search': configDefaults['multi-address-search'] !== undefined ? configDefaults['multi-address-search'] : false,
+          'map-layers': configDefaults['map-layers'] !== undefined ? configDefaults['map-layers'] : true,
           'address-recording': configDefaults['address-recording'] !== undefined ? configDefaults['address-recording'] : false,
           'building-styles': configDefaults['building-styles'] !== undefined ? configDefaults['building-styles'] : false
         }
